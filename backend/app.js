@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const exchangeRoutes = require('./routes/exchangeRoutes');
 const forexDataRoutes = require('./routes/forexDataRoutes');
 const { scrapeData } = require('./cron/scraperCron');
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpecs = require('./swaggerConfig');
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -23,6 +25,7 @@ mongoose.connect('mongodb+srv://parthivc2002:yLojn3psbiAIk7uO@test.g5utdbt.mongo
   useUnifiedTopology: true,
 });
 
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs));
 app.use('/api', exchangeRoutes);
 app.use('/api', forexDataRoutes);
 

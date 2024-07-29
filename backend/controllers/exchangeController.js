@@ -60,5 +60,6 @@ async function scrapeAndStoreData(req, res) {
   
 
 module.exports = {
-  scrapeAndStoreData
+  scrapeAndStoreData,
+  fetchYahooFinanceData
 };
