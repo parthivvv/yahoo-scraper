@@ -4,6 +4,7 @@
 This project is a web application that scrapes historical exchange rate data from Yahoo Finance and provides a REST API for querying this data. It also includes a frontend interface for users to interact with the API, select currency pairs, and view exchange rate data over specified periods.
 
 **Features**
+
 Data Scraping: Periodically scrapes exchange rate data from Yahoo Finance.
 REST API: Provides endpoints to query historical exchange rate data.
 Frontend Interface: A user-friendly interface for selecting currency pairs and viewing exchange rate data.
