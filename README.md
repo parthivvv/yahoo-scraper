@@ -54,41 +54,6 @@ Run the Frontend Development Server
 npm start
 The frontend will be available at http://localhost:3000.
 
-**Folder Structure**
-yahoo-finance-scraper/
-├── backend/
-│   ├── controllers/
-│   │   ├── exchangeController.js
-│   │   └── scraperController.js
-│   ├── models/
-│   │   ├── exchange.js
-│   │   └── exchangeRate.js
-│   ├── routes/
-│   │   ├── exchangeRoutes.js
-│   │   └── forexDataRoutes.js
-│   ├── cron/
-│   │   └── scraperCron.js
-│   ├── app.js
-│   └── .env
-└── frontend/
-    ├── public/
-    ├── src/
-    │   ├── components/
-    │   │   ├── ExchangeDataForm.js
-    │   │   ├── NavBar.js
-    │   │   ├── ResultsDisplay.js
-    │   │   └── ResultsContext.js
-    │   ├── styles/
-    │   │   ├── App.css
-    │   │   ├── ExchangeDataForm.css
-    │   │   ├── NavBar.css
-    │   │   ├── ResultsDisplay.css
-    │   │   └── index.css
-    │   ├── App.js
-    │   ├── index.js
-    └── .env
-
-
 
 **API Endpoints**
 
