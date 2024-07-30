@@ -25,7 +25,7 @@ const ExchangeDataForm = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:3001/api/scrape', {
+      const response = await axios.post('https://yahoo-scraper.onrender.com/api/scrape', {
         quote,
         fromDate,
         toDate,
@@ -43,7 +43,7 @@ const ExchangeDataForm = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:3001/api/forex-data', {
+      const response = await axios.post('https://yahoo-scraper.onrender.com/api/forex-data', {
         from: fromCurrency,
         to: toCurrency,
         period,
